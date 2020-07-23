@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_section_intros",
+  "info": {
+    "name": "Intro",
+    "icon": "book-reader"
+  },
+  "options": {},
+  "attributes": {
+    "SectionTitle": {
+      "type": "string"
+    },
+    "SectionBody": {
+      "type": "richtext",
+      "required": true
+    },
+    "SectionImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
