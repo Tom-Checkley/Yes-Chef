@@ -1,0 +1,33 @@
+@import '../../../scss/1-Settings/_index';
+
+.nav {
+  background-color: $COLOR-GreyDarker;
+  @include padding($base-line-height * .5, $base-line-height);
+  color: $color-yc-white;
+}
+
+.nav__list {
+  display: flex;
+  max-width: rem($max-width);
+  margin: auto;
+
+}
+
+.nav__item {
+
+  & + & {
+    @include media($bp-large) {
+      @include margin-left($base-line-height);
+    }
+  }
+
+  &--home {
+    margin-right: auto;
+  }
+}
+
+.nav__link {
+  text-decoration: none;;
+  font-size: rem($font-size-xx-large);
+  font-family: $header-font;
+}
