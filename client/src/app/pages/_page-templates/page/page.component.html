@@ -1,0 +1,4 @@
+<app-banner [banner]="page.banner"></app-banner>
+<main *ngIf="page.sections">
+  <app-section *ngFor="let section of page.sections" [section]="section"></app-section>
+</main>

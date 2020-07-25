@@ -16,6 +16,11 @@ body {
 	color: $base-font-color;
 }
 
+nav,
+main{
+  @include font-size($font-size-large);
+}
+
 img {
 	width: 100%;
 	max-width: 100%;

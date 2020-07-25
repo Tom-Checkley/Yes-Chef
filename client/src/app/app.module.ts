@@ -3,18 +3,23 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavComponent } from './components/nav/nav.component';
-import { HeaderComponent } from './components/header/header.component';
-import { HomeComponent } from './components/home/home.component';
+
+import { PageComponent } from './pages/_page-templates/page/page.component';
+import { HomeComponent } from './pages/home/home.component';
 import { RecipesComponent } from './components/recipes/recipes/recipes.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { NavComponent } from './components/nav/nav.component';
+import { SectionComponent } from './components/section/section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    HeaderComponent,
     HomeComponent,
-    RecipesComponent
+    RecipesComponent,
+    BannerComponent,
+    PageComponent,
+    SectionComponent
   ],
   imports: [
     BrowserModule,
